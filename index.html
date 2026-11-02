@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keşke Alsaydım — Piyasa Takip, Getiri Hesaplama ve Sanal Portföy</title>
+  <style>
+    :root {
+      --bg: #0d0d11;
+      --card: #16161e;
+      --border: #262636;
+      --text: #f3f4f6;
+      --muted: #9ca3af;
+      --accent: #a855f7;
+      --green: #10b981;
+      --gold: #f59e0b;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { max-width: 920px; margin: 0 auto; padding: 32px 20px 64px; }
+    header {
+      display: flex; justify-content: space-between; align-items: center;
+      padding-bottom: 24px; border-bottom: 1px solid var(--border); margin-bottom: 40px;
+      flex-wrap: wrap; gap: 16px;
+    }
+    .brand { font-size: 1.4rem; font-weight: 800; color: #fff; text-decoration: none; }
+    .brand span { color: var(--gold); }
+    nav a {
+      color: var(--muted); text-decoration: none; margin-left: 20px; font-weight: 500;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: #fff; }
+    .hero {
+      text-align: center; padding: 48px 24px; background: linear-gradient(145deg, #191924, #121218);
+      border: 1px solid var(--border); border-radius: 20px; margin-bottom: 36px;
+    }
+    .hero h1 { font-size: 2.2rem; margin-bottom: 16px; }
+    .hero p { color: var(--muted); max-width: 640px; margin: 0 auto 24px; font-size: 1.08rem; }
+    .badge {
+      display: inline-block; background: rgba(245, 158, 11, 0.15); color: var(--gold);
+      border: 1px solid rgba(245, 158, 11, 0.4); padding: 6px 14px; border-radius: 999px;
+      font-size: 0.85rem; font-weight: 600; margin-bottom: 16px;
+    }
+    .grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px; margin-bottom: 36px;
+    }
+    .card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 24px;
+    }
+    .card h3 { margin-bottom: 10px; color: #fff; font-size: 1.15rem; }
+    .card p { color: var(--muted); font-size: 0.95rem; }
+    .disclaimer {
+      background: rgba(168, 85, 247, 0.08); border: 1px solid rgba(168, 85, 247, 0.3);
+      border-radius: 16px; padding: 20px 24px; margin-top: 24px;
+    }
+    .disclaimer h4 { color: #d8b4fe; margin-bottom: 8px; }
+    .disclaimer p { color: var(--muted); font-size: 0.92rem; }
+    footer {
+      margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border);
+      text-align: center; color: var(--muted); font-size: 0.88rem;
+    }
+    footer a { color: var(--text); text-decoration: none; margin: 0 10px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="/" class="brand">Keşke <span>Alsaydım</span></a>
+      <nav>
+        <a href="/">Ana Sayfa</a>
+        <a href="/support.html">Destek (Support)</a>
+        <a href="/privacy.html">Gizlilik Politikası (Privacy)</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <span class="badge">iOS &amp; Android Finansal Bilgi Uygulaması</span>
+      <h1>Geçmiş Yatırım Fırsatlarını Hesaplayın, Piyasayı Canlı İzleyin</h1>
+      <p>
+        "Keşke o zaman altın, döviz veya kripto para alsaydım bugün ne kadar olurdu?" sorusunun cevabını saniyeler içinde öğrenin, anlık piyasa fiyatlarını görüntüleyin ve sanal portföyünüzü takip edin.
+      </p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h3>📊 Canlı Piyasa Görüntüleme</h3>
+        <p>Gram Altın, Çeyrek Altın, Dolar (USD), Euro (EUR), Gümüş, Bitcoin (BTC) ve popüler kripto paraların anlık piyasa verilerini ve 24 saatlik değişim oranlarını tek ekranda izleyin.</p>
+      </div>
+      <div class="card">
+        <h3>🧮 Keşke Alsaydım Hesaplayıcı</h3>
+        <p>Geçmişte seçtiğiniz bir tarihte belirli bir tutarda yatırım yapmış olsaydınız bugün kaç TL değerinde olacağını ve getiri oranını simüle edin.</p>
+      </div>
+      <div class="card">
+        <h3>💼 Sanal Portföy Takibi (Pro)</h3>
+        <p>Varlık miktarlarınızı ve alış maliyetlerinizi manuel kaydederek toplam sanal portföy değerinizi ve anlık kâr/zarar durumunuzu görüntüleyin.</p>
+      </div>
+      <div class="card">
+        <h3>🔔 Hedef Fiyat Alarmları (Pro)</h3>
+        <p>Seçtiğiniz varlık belirlediğiniz fiyata ulaştığında anında sesli bildirim alarak piyasa hareketlerini kaçırmayın.</p>
+      </div>
+    </section>
+
+    <section class="disclaimer">
+      <h4>⚠️ Önemli Yasal Bilgilendirme (Read-Only Information Disclaimer)</h4>
+      <p>
+        <strong>Keşke Alsaydım</strong> uygulaması yalnızca piyasa verilerini görüntüleme, geçmişe dönük getiri simülasyonu yapma ve kişisel/sanal portföy takibi amacıyla geliştirilmiştir. Uygulama üzerinden <strong>hiçbir şekilde gerçek para, altın, döviz, emtia veya kripto para alım-satım (trading) işlemi yapılmaz</strong>, cüzdan veya aracılık hizmeti sunulmaz ve yatırım danışmanlığı verilmez.
+      </p>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Ömer Altınkum — Keşke Alsaydım. Tüm hakları saklıdır.</p>
+      <p style="margin-top:8px;">
+        <a href="/support.html">Destek &amp; İletişim</a> |
+        <a href="/privacy.html">Gizlilik Politikası</a> |
+        <a href="/app-ads.txt">app-ads.txt</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
